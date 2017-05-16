@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/geren.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="js/jquery.fullPage.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script>
+        $(function(){
+            $('#dowebok').fullpage({
+                /*'navigation': true,*/
+//                loopBottom: true,
+                continuousVertical:true,
+                fixedElements:".next",
+                menu:"#menu",
+                navigation:"true",
+                navigationTooltips:["Home","About","Portfolio","Experience","Contact"],
+                anchors: ['page1', 'page2', 'page3', 'page4','page5'],
+                afterLoad:function(an,index){
+                    if(index==1){
+                         $(".banner-tu .p1").animate({top:340},1000);
+                         $(".banner-tu .p2").animate({right:80},1000);
+                         $(".banner-tu .p3").animate({bottom:130},1000);
+                    }
+                    if(index==2){
+                        $(".about-xia-left").animate({left:0});
+                        $(".about-xia-right").animate({right:0});
+                    }
+                    if(index==4){
+                        $(".gongzuo-xia").fadeIn();
+                    }
+                },
+                onLeave:function(index){
+                    if(index==1){
+                        $(".banner-tu .p1").animate({top:-500},1200);
+                        $(".banner-tu .p2").animate({right:-500},1200);
+                        $(".banner-tu .p3").animate({bottom:-400},1200);
+                    }
+                    if(index==2){
+                        $(".about-xia-left").animate({left:-400},1000);
+                        $(".about-xia-right").animate({right:-750},1000);
+                    }
+                    if(index==4){
+                        $(".gongzuo-xia").fadeOut();
+                    }
+                }
+            });
+
+            setInterval(function(){
+                $.fn.fullpage.moveSlideRight();
+            }, 3000);
+            $(".next").click(function(){
+                if($(this).hasClass("active")){
+                    $.fn.fullpage.moveTo(1);
+                }else{
+                    $.fn.fullpage.moveSectionDown();
+                }
+            });
+            $(".banner-tu .p1").animate({top:340},1200);
+            $(".banner-tu .p2").animate({right:80},1200);
+            $(".banner-tu .p3").animate({bottom:130},1200);
+        });
+    </script>
+</head>
+<body>
+<div id="dowebok">
+    <div class="section">
+        <!-- banner开始 -->
+        <div class='banner'>
+            <div class='banner-tu'>
+                <!-- 头部开始 -->
+                <header>
+                    <div class="header-nav">
+                        <main>
+                            <!-- 正常情况下开始 -->
+
+                            <span>MY PROSILE</span>
+                            <div>
+                                <ul >
+                                    <li>Home</li>
+                                    <li>About</li>
+                                    <li>Experience</li>
+                                    <li>Portfolio</li>
+                                    <li>Gallery</li>
+                                    <li>Contact</li>
+                                </ul>
+                            </div>
+
+                            <!-- 正常情况下结束 -->
+                        </main>
+                    </div>
+
+                    <!-- 小于768布局开始 -->
+                    <div class="header-nav-xiao">
+                        <main>
+                            <span>MY PROSILE</span>
+                            <img src="img/daohang.png" alt="">
+                        </main>
+                    </div>
+                    <!-- 小于768布局结束 -->
+
+                </header>
+                <!--<div class="banner-you-zi">-->
+                    <p class="p1">
+                        My Passion
+                    </p>
+                    <p class="p2">
+                        Lorem Ipsum is dummy text
+                    </p>
+                    <p class="p3">
+                        <img src="img/lianxi.png" alt="">
+                    </p>
+                <!--</div>-->
+            </div>
+            <!-- 头部结束	 -->
+        </div>
+        <div class="next">&gt</div>
+        <!-- banner结束 -->
+    </div>
+    <div class="section section2">
+        <!-- 关于我开始 -->
+        <div class="about-top">
+            <span>About Me</span>
+        </div>
+        <!-- 正常情况下开始 -->
+        <div class="about-xia">
+            <div class="about-xia-left">
+                <div class="about-xia-left-zhong">
+                    <div class="touxiang">
+                        <img src="img/touxiang3.jpg" alt="">
+                    </div>
+                    <ul>
+                        <li>Li Xia</li>
+                        <li>Web Designer</li>
+                        <li>
+                            <p class="lianxi">
+                                <img src="img/lianxi.png" alt=""></li>
+                        </p>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-xia-right">
+                <div class="about-xia-right-box">
+                    <div class="about-xia-right-box-shang">
+                        <span class="bianzi">About My Skils</span>
+                    </div>
+                    <div class="about-xia-right-box-zhong">
+                        <span>本人性格内外结合,适应能力强，为人诚实，有良好的人际交往能力，具备相关的专业知识和认真。细心、耐心的工作态度及良好的职业道德修养。相信团体精神的我对工作认真负责，总希望能把事情做得更好! 性格开朗，对文字语言和数字敏感，对生活充满希望，对工作充满热情! 能在短期间内适应新环境，有强烈的品质意识;对工作认真负责，上进心强! 懂电脑基本操作，熟练小键盘操作!</span>
+                    </div>
+                    <div class="about-xia-right-box-xia">
+                        <table border="0px" cellspacing="0px" cellpadding="20px">
+                            <tr>
+                                <td>Jquery</td>
+                                <td class="jindu">
+                                    <div class="jindutiao1"></div>
+                                </td>
+                                <td class="baifenbi">89%</td>
+
+                            </tr>
+                            <tr>
+                                <td>Photoshop</td>
+                                <td>
+                                    <div class="jindutiao2"></div>
+                                </td>
+                                <td class="baifenbi">90%</td>
+                            </tr>
+                            <tr>
+                                <td>Wordpress</td>
+                                <td>
+                                    <div class="jindutiao3"></div>
+                                </td>
+                                <td class="baifenbi">95%</td>
+                            </tr>
+                            <tr>
+                                <td>Php</td>
+                                <td>
+                                    <div class="jindutiao4"></div>
+                                </td>
+                                <td class="baifenbi">92%</td>
+                            </tr>
+                            <tr>
+                                <td>Html5</td>
+                                <td>
+                                    <div class="jindutiao5"></div>
+                                </td>
+                                <td class="baifenbi">96%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 正常情况下结束 -->
+        <!-- 关于我结束 -->
+    </div>
+    <div class="section section3">
+        <!-- 作品展示开始 -->
+        <div class="zuopin-top">
+            <span>My Portfolio</span>
+            <span class="zuopin-top-zi2">My Recent Projects , Just "Click" on them to know More.</span>
+        </div>
+        <!-- 正常情况下开始 -->
+        <div class="zuopin-xia">
+            <div class="zuopin-xia-zuo slide">
+                <div class="zuopin-xia-zuo-shang">
+                    <!-- <img src="img/闪屏.jpg" alt=""> -->
+                    <div class="zhezhao"></div>
+                </div>
+
+                <div class="zuopin-xia-zuo-zhong">
+                    <!-- <img src="img/麦克风.jpg" alt=""style="height:330px; width: 360px;"> -->
+                </div>
+                <div class="zuopin-xia-zuo-xia"></div>
+            </div>
+            <div class="zuopin-xia-zhong slide">
+                <div class="zuopin-xia-zhong-shang">
+
+                </div>
+                <div class="zuopin-xia-zhong-zhong"></div>
+                <div class="zuopin-xia-zhong-xia"></div>
+            </div>
+            <div class="zuopin-xia-you slide">
+                <div class="zuopin-xia-you-shang">
+
+                </div>
+                <div class="zuopin-xia-you-zhong"></div>
+                <div class="zuopin-xia-you-xia"></div>
+            </div>
+        </div>
+        <!-- 正常情况下结束 -->
+        <!-- 小于768PX开始 -->
+        <div class="zuopin-xia-xiao">
+            <div class="zuopin-xia-you-xiao">
+                <div class="zuopin-xia-you-shang-xiao">
+                    <img src="img/麦克风.jpg" alt="">
+                </div>
+                <div class="zuopin-xia-you-zhong-xiao">
+                    <img src="img/zuopin77.jpg" alt="">
+                </div>
+                <div class="zuopin-xia-you-xia-xiao">
+                    <!-- <img src="img/zuopinxiao3.jpg" alt=""> -->
+                </div>
+            </div>
+        </div>
+        <!-- 小于768结束 -->
+        <!-- 作品展示结束 -->
+    </div>
+    <div class="section section4">
+        <!-- 工作开始 -->
+        <div class="gongzuo-top">
+            <span>Work Experience</span>
+        </div>
+        <!-- 正常情况下开始 -->
+        <div class="gongzuo-xia">
+            <div class="gongzuo-xia-top">
+                <div class="gongzuo-xia-top-left">
+                    <div class="gongzuo-xia-top-left-tu">
+                        <img src="img/shunfeng.png" alt="">
+                    </div>
+                    <span class="gongzuo-xia-top-left-zi1">SF EXPRESS</span>
+                    <span class="gongzuo-xia-top-left-zi2" style="font-size:13px;"><span></span>2016年11月11日，我很荣幸的参加了顺丰公司"双 11"活动，通过本次活动，我不仅锻炼了自己,还更加坚定了不抛弃、不放弃的精神及团队合作的精神，从各个活动项目中受益匪浅,更深刻理解了公司的企业文化、历史及发展，并对自己的职业发展有了更明确的规划。</span>
+                </div>
+                <div class="gongzuo-xia-top-right">
+                    <div class="gongzuo-xia-top-right-tu">
+                    </div>
+                    <span class="gongzuo-xia-top-right-zi1">Kentucky Fried Chicken</span>
+                    <span class="gongzuo-xia-top-right-zi2" style="font-size:13px;">肯德基工作的这段时间里, 通过这次事件我知道各行各业都有自己的责任和规矩.最重要的就是了解我在待人接物、如何处理好人际关系。更重要的是我在社会实践中学会了自强自立!凡事都要靠自已!</span>
+                </div>
+            </div>
+            <div class="gongzuo-xia-bottom">
+                <div class="gongzuo-xia-bottom-left">
+                    <div class="gongzuo-xia-bottom-left-tu"></div>
+                    <span class="gongzuo-xia-bottom-left-zi1">ENSY HOME</span>
+                    <span class="gongzuo-xia-bottom-left-zi2" style="font-size:13px;">营业员是店铺的形象，是“品牌大使”，直接面临面的与终端客户接触，是销售的重要环节，对品牌企业而言更是整体营销体系的末梢神经。营业员的整体素质直接影响着市场及消费者对企业品牌的认知度和美誉度。</span>
+                </div>
+                <div class="gongzuo-xia-bottom-right">
+                    <div class="gongzuo-xia-bottom-right-tu"></div>
+                    <span class="gongzuo-xia-bottom-right-zi1">REAL ESTATE</span>
+                    <span class="gongzuo-xia-bottom-right-zi2" style="font-size:13px;">发传单，是普通的大学生都经历过这种不太需要脑力，坚持就是胜利，短时间的兼职方式，第一次从找，商议，工作，沟通一天的发传单和一天的拿工资的过程，让我感触很多，整体看——不亦可乎.</span>
+                </div>
+            </div>
+        </div>
+        <!-- 正常情况下结束 -->
+        <!-- 工作结束 -->
+    </div>
+    <div class="section section5">
+        <!-- 联系我开始 -->
+        <div class="lianxi-top">
+            <span>Get In Touch</span>
+            <span class="lianxi-top-zi2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+        </div>
+        <div class="lianxi-botttom">
+            <div class="lianxi-botttom-left">
+                <ul>
+                    <li>
+                        <p class='iconfont icon-dianhua dianhua'></p>
+                        <span>PHONE</span>
+                        <p class="lianxi-botttom-left-zi">(+0359)15735165821</p>
+                    </li>
+                    <li>
+                        <p class='iconfont icon-msnui-envelope-line'></p>
+                        <span>EMAIL</span>
+                        <p class="lianxi-botttom-left-zi">865290466@qq.com</p>
+                    </li>
+                    <li>
+                        <p class='iconfont icon-appxiugaiicon10'></p>
+                        <span>ADDRESS</span>
+                        <p class="lianxi-botttom-left-zi">山 西省太原市小店区平阳路学府街口凯通大厦2层1612教室</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="lianxi-botttom-right">
+                <div class="lianxi-botttom-right-shang">
+                    <span><!-- <input type="text" style="width: 100%; height: 100%;"placeholder="Your Name*"> --></span>
+                </div>
+                <div class="lianxi-botttom-right-zhong">
+                    <span>Your Email*</span>
+                </div>
+                <div class="lianxi-botttom-right-xia">
+                    <span>Your Massage*</span>
+                    <div class="lianxi-botttom-right-xia-feiji"></div>
+                </div>
+            </div>
+            <div class="dibu">
+                <span>Copyright @ 2017.Company name All rights reserved</span>
+            </div>
+        </div>
+        <!-- 联系我结束 -->
+        <!-- 底部开始 -->
+
+        <!-- 底部结束 -->
+    </div>
+</div>
+<a href="http://www.dowebok.com/" style="display: none;">dowebok</a>
+<a href="http://www.dowebok.com/77.html" style="display: none;">jQuery全屏滚动插件fullPage.js</a>
+
+</body>
+</html>

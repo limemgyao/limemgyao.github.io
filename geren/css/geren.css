@@ -1,0 +1,983 @@
+/* 头部开始 */
+.banner{
+	width: 100%;
+	height:650px;
+	/* background: #ccaaaa; */
+	overflow: hidden;
+	position: relative;
+}
+.banner-tu{
+	width: 100%;
+	height:100%;
+    background-image:url('../img/banner33.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+header .header-nav{
+	width: 100%;
+	height:100px ;
+	position:fixed;
+	left:30px;
+	top:0;
+	/* background:#44; */
+}
+.header-nav main{
+    max-width:1090px;
+	height:100px;
+	/* background: pink; */
+	margin: 0 auto;
+}
+.header-nav main span{
+	width:200px;
+	display:block;
+	float:left;
+	line-height:100px;
+    font-size:25px;
+    color:#fff;
+    /* background: #000;  */
+}
+.header-nav main div{
+    width:450px;
+	height:100px;
+	/* background: #000; */
+	float:right;
+
+}
+.header-nav main div ul{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+.header-nav main div ul li{
+	line-height:100px;
+	font-size:16px;
+	color:#fff;
+}
+.header-nav ul li{
+	display: inline-block;
+}
+.header-nav ul{
+	text-align: justify;/* 两端对齐 */
+}
+.header-nav ul:after{
+    content: "";
+	display: inline-block;	 
+    height: 0;
+    width: 100%;       
+}
+/*.banner-you-zi{
+   width: 100%;
+   !* padding:0 163px 0; *!
+   height: auto;
+   !* margin-top: 150px; *!
+   overflow: hidden;
+}*/
+
+.p1{
+    font-size: 40px;
+    color: #fff;
+    line-height: 60px;
+	text-align: center;
+	position:absolute;
+	/*top: 340px;*/
+	right:175px;
+	top:-500px;
+}
+/*.banner-you-zi{*/
+	/*width: 430px;*/
+	/*height: auto;*/
+	/*position: absolute;*/
+	/*top: 350px;*/
+	/*right:80px;*/
+/*}*/
+.p2{
+    font-size: 30px;
+    color: #fff;
+    line-height: 50px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+	position:absolute;
+	top: 410px;
+	/*right:80px;*/
+	right:-500px;
+}
+.p3{
+    line-height: 50px;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+	position:absolute;
+	/*bottom:130px;*/
+	right:175px;
+	bottom:-400px;
+}
+.next{
+	width:30px;
+	height:30px;
+	background: #7d7d7d;
+	color:#fff;
+	font-size: 20px;
+	line-height:30px;
+	text-align: center;
+	position: fixed;
+	left:50%;
+	bottom:20px;
+	border-radius: 50%;
+	margin-left: -22px;
+	user-select: none;
+	cursor: pointer;
+	transform: rotate(90deg);
+}
+.p1{
+
+}
+/* 头部结束 */
+/* 关于我开始 */
+.section2 {
+	background: url("../img/4bg.jpg") center center no-repeat;
+	background-size:100%;
+}
+.about-top{
+	width:85%;
+	height:25px;
+	margin: 0 auto; 
+	/* background: pink; */
+	margin-top: 70px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.about-top span{
+	font-size:30px;
+	color:#000;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+	line-height: 25px;	
+}
+.about-xia{
+    width:85%;
+	height:100%;
+	margin: 0 auto; 
+	/* background: #000; */
+	/* opacity: 0.5; */
+	margin-top: 20px;
+	overflow: hidden;
+	position: relative;
+}
+
+.about-xia .about-xia-left{
+	/* width: 31%; */
+	height: 530px;
+	/*background: pink;*/
+	position:absolute;
+	left:-500px;
+	top:0;
+}
+.about-xia .about-xia-right{
+	/* width: 66%; */
+	height:530px;
+	position:absolute;
+	right:-800px;
+	top:0;
+	/*background: pink;*/
+}
+.about-xia-left .about-xia-left-zhong{
+    width:80%;
+    height: 70%;
+    /* background: #aaaaaa; */
+    margin:0 auto;
+    margin-top: 85px;
+    text-align: center;
+}
+.about-xia-left-zhong .touxiang{
+	width:200px;
+	height:200px;
+	margin: 0 auto;
+	overflow: hidden;
+	/* background:pink; */
+
+	border-radius: 50%;
+} 
+
+.about-xia-left-zhong ul li{
+	font-size:20px;
+	color: #000;
+	text-align: center;
+	padding-top: 21px;
+}
+.about-xia-left-zhong ul li .lianxi{
+	line-height: 50px;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+}
+.about-xia-right .about-xia-right-box{
+	width: 90%;
+	height: 80%;
+	/* background:#aaaaaa ; */
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.about-xia-right-box .about-xia-right-box-shang{
+	width: 100%;
+	height:20px;
+	/* background:#fff; */
+	text-align: center;	
+}
+.about-xia-right-box-shang span{
+	font-size: 25px;
+	color: #000;
+}
+.about-xia-right-box-zhong span{
+	display: block;
+	font-size: 17px;
+	color: #000;
+	margin-top:60px;
+}
+.about-xia-right-box-xia{
+
+}
+table{
+	width:100%;
+	height:200px;
+	margin-top: 50px; 
+}
+.baifenbi{
+	text-align: right;
+}
+.jindu{
+	width:70%;
+	line-height: 40px;
+}
+.jindutiao1{
+	width:80%;
+	height: 2px;
+	background:#FF9800;
+	float: left;
+}
+.jindutiao2{
+	width:85% ;
+	height: 2px;
+	background:#FF9800;
+	float: left;
+}
+.jindutiao3{
+	width:89% ;
+	height: 2px;
+	background:#FF9800;
+	float: left;
+}
+.jindutiao4{
+	width:83%;
+	height: 2px;
+	background:#FF9800;
+	float: left;
+}
+.jindutiao5{
+	width:90%;
+	height: 2px;
+	background:#FF9800;
+	float: left;
+}
+/* 关于我结束 */
+/* 作品展示开始 */
+.section3{
+	background: url("../img/2bg.jpg") center center no-repeat;
+	background-size:100%;
+}
+.zuopin-top{
+	width:85%;
+	height:25px;
+	margin: 0 auto; 
+	/* background: pink; */
+	margin-top: 70px;
+	margin-bottom:60px;
+	text-align: center;
+}
+.zuopin-top span{
+	display: block;
+	font-size: 30px;
+	color:#000;
+	line-height: 25px;
+	position: relative;	
+}
+.zuopin-top .wenzi:after{
+	content:attr(data-content);
+	font-size: 30px;
+	color:red;
+	line-height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.zuopin-top .zuopin-top-zi2{
+	font-size: 20px;
+	color:#ccc;
+	line-height: 20px;
+	padding-top: 15px;
+}
+.zuopin-xia{
+	width:85%;
+	height:auto;
+	overflow: hidden;
+	margin: 0 auto;
+	/* background: #000; */
+	/* opacity: 0.5; */
+}
+.zuopin-xia-zuo{
+	width: 85%;
+	height: 100%;
+	/* background: pink; */
+	float: left;
+	margin-right:0;
+}
+.zuopin-xia-zhong{
+	/* display: inline-block; */
+	width:85%;
+	height: 100%; 
+	float: left;
+	/* background: pink; */
+	margin-right:0;
+}
+.zuopin-xia-you{
+	width:85%;
+	height: 100%;
+	/* background: pink; */
+    float: left;
+    /* display: inline-block; */
+}
+.zuopin-xia-zuo-shang{
+	width:32%;
+	height: 480px;
+	background:pink;
+	position: relative;
+	background:url('../img/闪屏.jpg') center center no-repeat;
+	background-size:cover;
+	display: inline-block;
+}
+.zhezhao{
+	width:100%;
+	height: 480px;
+    border: 2px dashed #000;
+    background: rgba(255,255, 255,0.5);
+    position: absolute;
+    left:0;
+    top:0;
+    display: none;
+}
+.zhezhao:hover{
+	display:block;
+}
+.zhezhao:before{
+	content: "";
+	display: block;
+    width:250px;
+    height: 430px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    /* background: #000; */
+    position: absolute;
+    right: 20px;
+    bottom: -2px;
+}
+/* .zhezhao:after{
+	content: "";
+	display: block;
+    width:430px;
+    height:100px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    background: #000;
+    position: absolute;
+    right: -2px;
+    bottom: 0px;
+} */
+.zuopin-xia-zuo-zhong{
+	width:32%;
+	height:480px;
+	/*background: pink;*/
+	background:url('../img/tianmao.png') center center no-repeat;
+	background-size:cover;
+	display: inline-block;
+	margin:0 15px 0 15px;
+	
+}
+.zuopin-xia-zuo-xia{
+	width:32%;
+	height:480px;
+	/*background:pink;*/
+    background:url('../img/jd.png') left top no-repeat;
+	background-position: 0 top;
+	display: inline-block;
+}
+.zuopin-xia-zhong-shang{
+	width: 32%;
+	height:480px;
+	/*background: pink;*/
+	background:url('../img/yd.jpg') center center no-repeat;
+	background-size: cover;
+	display: inline-block;
+
+}
+.zuopin-xia-zhong-zhong{
+	width: 32%;
+	height:480px;
+	/*background: pink;*/
+	background:url('../img/xiaomi2.jpg') center center no-repeat;
+	background-size:cover;
+	display: inline-block;
+	margin:0 15px 0 15px;
+}
+.zuopin-xia-zhong-xia{
+	width:32%;
+	height:480px;
+	/*background:pink; */
+	background:url('../img/zuopin77.jpg') center center no-repeat;
+	background-size:cover;
+	display: inline-block;
+}
+.zuopin-xia-you-shang{
+	width:32%;
+	height: 480px;
+	/*background: pink;*/
+    background:url('../img/fanke55.jpg') center center no-repeat;
+	background-size:cover;
+	display: inline-block;
+}
+.zuopin-xia-you-zhong{
+	width:32%;
+	height:480px;
+	/*background: pink;*/
+	background:url('../img/xiaomi.jpg') center center no-repeat;
+	background-size:cover;
+	display: inline-block;
+	margin:0 15px 0 15px;
+}
+.zuopin-xia-you-xia{
+	width:32%;
+	height:480px;
+	/*background: pink;*/
+	background:url('../img/kugou.jpg') center center no-repeat;
+	background-size:cover;
+	display: inline-block;
+}
+/* 作品展示结束 */
+/* 工作开始 */
+.section4{
+	background: url("../img/1bg.jpg");
+	background-size: 100%;
+}
+.gongzuo-top{
+	width:85%;
+	height:25px;
+	margin: 0 auto; 
+	/* background: pink; */
+	margin-top:50px;
+	margin-bottom: 50px;
+	text-align: center;
+	overflow: hidden;
+}
+.gongzuo-top span{
+	font-size: 30px;
+	color:#000;
+	line-height: 25px;	
+}
+.gongzuo-xia{
+    width: 85%;
+    height:auto;
+    /* background:#000; */
+    margin: 0 auto;
+    overflow: hidden;
+	position: relative;
+}
+.gongzuo-xia .gongzuo-xia-top{
+	width: 100%;
+	height:250px;
+	border-bottom: 1px solid #000;
+}
+.gongzuo-xia .gongzuo-xia-bottom{
+	width: 100%;
+	height:250px;
+}
+.gongzuo-xia-top .gongzuo-xia-top-left{
+	/* width: 50%; */
+	height: 100%;
+	/*background: pink;*/
+	border-right: 1px solid #000;
+	border-bottom:1px solid #000;
+	float: left;
+
+}
+.gongzuo-xia-top-left .gongzuo-xia-top-left-tu{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	/* background:#ccc; */
+	margin-top: 20px;
+}
+.gongzuo-xia-top-left .gongzuo-xia-top-left-zi1{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.gongzuo-xia-top-left .gongzuo-xia-top-left-zi2{
+	display: block;
+	text-align: center;
+	 font-size: 17px;
+}
+.gongzuo-xia-top .gongzuo-xia-top-right{
+	/* width: 50%; */
+	height: 100%;
+	/*background: pink;*/
+	float: left;
+	border-left:1px solid #000;
+	border-bottom:1px solid #000;
+}
+.gongzuo-xia-top-right .gongzuo-xia-top-right-tu{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background:#ccc;
+	margin-top: 20px;
+	border-radius: 20%;
+	background: url('../img/kendeji2.png') center center no-repeat;
+	background-size: cover;
+}
+.gongzuo-xia-top-right .gongzuo-xia-top-right-zi1{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.gongzuo-xia-top-right .gongzuo-xia-top-right-zi2{
+	display: block;
+	text-align: center;
+	 font-size: 17px;
+}
+.gongzuo-xia-bottom .gongzuo-xia-bottom-left{
+	/* width: 50%; */
+	height: 100%;
+	/*background: pink;*/
+	border-right: 1px solid #000;
+	float: left;
+}
+.gongzuo-xia-bottom-left .gongzuo-xia-bottom-left-tu{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background:#ccc;
+	margin-top: 20px;
+	border-radius: 20%;
+	background: url('../img/juranzhijia.png') center center no-repeat;
+	background-size: cover;
+}
+.gongzuo-xia-bottom-left .gongzuo-xia-bottom-left-zi1{
+    display: block;
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.gongzuo-xia-bottom-left .gongzuo-xia-bottom-left-zi2{
+	display: block;
+	text-align: center;
+	 font-size: 17px;
+}
+.gongzuo-xia-bottom .gongzuo-xia-bottom-right{
+	/* width: 50%; */
+	height: 100%;
+	/*background: pink;*/
+	border-left:1px solid #000;
+	float: left ;
+}
+.gongzuo-xia-bottom-right .gongzuo-xia-bottom-right-tu{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background:#ccc;
+	margin-top: 20px;
+	border-radius: 20%;
+	background: url('../img/fachuandan.jpg') center center no-repeat;
+	background-size: cover;
+}
+.gongzuo-xia-bottom-right .gongzuo-xia-bottom-right-zi1{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.gongzuo-xia-bottom-right .gongzuo-xia-bottom-right-zi2{
+	display: block;
+	text-align: center;
+	 font-size: 17px;
+}
+/* 工作结束 */
+/* 联系我开始 */
+.section5{
+	background: url("../img/beijing.jpg");
+	background-size: 100%;
+}
+.lx{
+	width:200px;
+	height:200px;
+	overflow: hidden;
+	background: url("../img/lx.png") center center no-repeat;
+	position:absolute;
+	background-size: contain;
+	left:0;
+	top:0;
+}
+.lianxi-top{
+	width:85%;
+	height:25px;
+	margin: 0 auto; 
+	/* background: pink; */
+	margin-top:200px;
+	margin-bottom:60px;
+	text-align: center;
+}
+.lianxi-top span{
+	display: block;
+	font-size: 30px;
+	color:#000;
+	line-height: 25px;	
+}
+.lianxi-top .lianxi-top-zi2{
+	font-size: 20px;
+	color:#ccc;
+	line-height: 20px;
+	padding-top: 15px;
+}
+.lianxi-botttom{
+	width: 85%;
+	height: 100%;
+	/* background: pink; */
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top:100px;
+}
+.lianxi-botttom .lianxi-botttom-left{
+	/* width:40%; */
+	height:340px;
+	background: rgba(221, 221, 221, 0.7);
+	float: left;
+	box-shadow: 0 0 15px rgba(0, 0, 0,0.1);
+}
+.lianxi-botttom .lianxi-botttom-right{
+	/* width:58%; */
+	height:340px;
+	/* background: pink; */
+	/* box-shadow: 0 0 15px rgba(0, 0, 0,0.1); */
+}
+.lianxi-botttom .lianxi-botttom-left ul{
+	padding: 20px;
+}
+.lianxi-botttom .lianxi-botttom-left ul li{
+	padding: 17px;
+}
+.lianxi-botttom .lianxi-botttom-left ul .lianxi-botttom-left-zi{
+    font-size: 16px;
+    color:#888 ;
+}
+.lianxi-botttom .lianxi-botttom-left ul p{
+    font-size: 20px;
+}
+.lianxi-botttom .lianxi-botttom-left ul .dianhua{
+    font-size: 27px;
+}
+.lianxi-botttom .lianxi-botttom-left ul li span{
+    font-size: 14px;
+}
+
+.lianxi-botttom .lianxi-botttom-right .lianxi-botttom-right-shang{
+	width: 100%;
+	height: 56px;
+	background: rgba(221, 221, 221, 0.7);
+	line-height: 56px;
+	padding-left: 10px;
+	color: #888;
+	box-shadow: 0 0 15px rgba(0, 0, 0,0.1);
+} 
+.lianxi-botttom .lianxi-botttom-right .lianxi-botttom-right-zhong{
+	width: 100%;
+	height: 56px;
+	background: rgba(221, 221, 221, 0.9);
+	margin-top: 34px;
+	line-height: 56px;
+	padding-left: 10px;
+	color: #888;
+	box-shadow: 0 0 15px rgba(0, 0, 0,0.1);
+} 
+.lianxi-botttom .lianxi-botttom-right .lianxi-botttom-right-xia{
+	width: 100%;
+	height: 160px;
+	background: rgba(221, 221, 221, 0.9);
+	margin-top: 34px;
+	padding-left: 10px;
+	color: #888;
+	box-shadow: 0 0 15px rgba(0, 0, 0,0.1);
+} 
+.lianxi-botttom-right-xia .lianxi-botttom-right-xia-feiji{
+	width: 12%;
+	height: 100%;
+	/* background:#000; */
+	float: right;
+	background: url('../img/massage.png') center center no-repeat;
+	background-size: 100%; 
+}
+.lianxi-botttom-right-xia-feiji:hover{
+	transition: all .3s linear;
+    background: url('../img/massagebian.png') center center no-repeat;
+    background-size: 100% 
+}
+/* 联系我结束 */
+/* 底部开始 */
+.dibu{
+	width: 100%;
+	height: 60px;
+	padding-left: -50px;
+	background: #000;
+	margin-top:450px;
+}
+.dibu span{
+	display: block;
+	font-size: 10px;
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+}
+/* 底部结束 */
+
+/* 当宽度小于768px时开始 */
+@media screen and (max-width: 768px) {
+	.header-nav{
+		display:none;
+	}
+	.header-nav-xiao{
+		display: block;
+	}
+	.about-xia .about-xia-left{
+	    width:100%;
+	}
+	.about-xia .about-xia-right{
+	    width:100%;   
+	}
+    .lianxi-botttom .lianxi-botttom-left{
+	    width:100%;
+	    margin-top:50px;
+    }
+    .lianxi-botttom .lianxi-botttom-right{
+        float: left;
+        width:100%;
+        margin-top: 30px;
+    }
+    .gongzuo-xia-top .gongzuo-xia-top-left{
+        width:100%; 
+        margin-top: 20px;
+        border-top:1px solid #000;
+        border-left:1px solid #000;
+    }
+    .gongzuo-xia-top .gongzuo-xia-top-right{
+    	width: 100%;
+    	margin-top: 20px;
+    	border-top:1px solid #000;
+        border-left:1px solid #000;
+        border-right:1px solid #000;
+    }
+    .gongzuo-xia-bottom .gongzuo-xia-bottom-right{
+    	width: 100%;
+    	margin-top: 20px;
+        border: 1px solid #000;
+    }
+    .gongzuo-xia-bottom .gongzuo-xia-bottom-left{
+    	width: 100%;
+    	margin-top: 20px;
+    	border-top:1px solid #000;
+    	border-bottom:1px solid #000;
+        border-left:1px solid #000;
+    }
+    .zuopin-xia{
+    	display: none;
+    }
+    .zuopin-xia-xiao{
+    	display:block;
+    }
+}
+/* 当宽度小于768px结束 */
+
+
+/* 当屏幕大于768px小于1024px时开始、 */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	.header-nav{
+		padding: 25px;
+		display:block;
+	}
+	.header-nav-xiao{
+		display: none;
+	}
+	.banner-tu-you1{
+		padding:25px;
+	}
+	.about-xia .about-xia-left{
+	   width: 31%;
+	}
+	.about-xia .about-xia-right{
+	   width: 66%;
+	}
+	.about-xia{
+	   padding: 0 20px;
+	} 
+     .lianxi-botttom .lianxi-botttom-left{
+	    width:40%;
+    }
+    .lianxi-botttom .lianxi-botttom-right{
+	    width:58%;
+	    float: right;
+    }
+    .gongzuo-xia-top .gongzuo-xia-top-left{
+        width:50%; 
+    }
+    .gongzuo-xia-top .gongzuo-xia-top-right{
+    	width: 50%;
+    }
+    .gongzuo-xia-bottom .gongzuo-xia-bottom-right{
+    	width: 50%;
+    }
+    .gongzuo-xia-bottom .gongzuo-xia-bottom-left{
+    	width: 50%;
+    }
+    .zuopin-xia{
+    	display: block;
+    }
+    .zuopin-xia-xiao{
+    	display: none;
+    }
+}
+
+/* 当屏幕大于768px小于1024px时结束 */
+
+
+/* 当屏幕大于1024时开始 */
+@media screen and  (min-width: 1024px){
+	.header-nav{
+		padding: 25px;
+		display:block;
+	}
+	.header-nav-xiao{
+		display: none;
+	}
+   .about-xia .about-xia-left{
+	   width: 31%;
+	}
+	.about-xia .about-xia-right{
+	   width: 66%;
+	}
+    .lianxi-botttom .lianxi-botttom-left{
+	    width:40%;
+    }
+    .lianxi-botttom .lianxi-botttom-right{
+	    width:58%;
+	    float: right;
+    }
+    .gongzuo-xia-top .gongzuo-xia-top-left{
+        width:50%; 
+    }
+    .gongzuo-xia-top .gongzuo-xia-top-right{
+    	width: 50%;
+    }
+    .gongzuo-xia-bottom .gongzuo-xia-bottom-right{
+    	width: 50%;
+    }
+    .gongzuo-xia-bottom .gongzuo-xia-bottom-left{
+    	width: 50%;
+    }
+    .zuopin-xia{
+    	display: block;
+    }
+    .zuopin-xia-xiao{
+    	display: none;
+    }
+}
+/* 当屏幕大于1024时结束 */
+
+
+
+
+
+
+.about-top{
+	padding:0 25px 0 ;
+}
+.about-xia-left2{
+	padding:0.2rem;
+}
+.about-xia-left-zhong2{
+
+}
+.header-nav-xiao{
+	width:100%;
+	padding:2rem; 
+}
+.header-nav-xiao main{
+	width: 100%;
+	height: auto;
+}
+.header-nav-xiao span{
+	font-size:2rem;
+	color: #fff;
+}
+.header-nav-xiao img{
+	height: 3rem;
+	float: right;
+	width: 3rem;
+}
+.zuopin-xia-xiao{
+	width:85%; 
+	height:1168px;
+	margin: 0 auto; 
+	/* background: #000; */
+	/* opacity: 0.5; */
+	margin-top: 30px;
+}
+.zuopin-xia-xiao .zuopin-xia-you-xiao{
+	width:100%;
+	height: 100%;
+	/* background: pink; */
+    float: left;
+    /* display: inline-block; */
+}
+.zuopin-xia-xiao .zuopin-xia-you-shang-xiao{
+	width: 100%;
+	height: 360px;
+	background: pink;
+	margin-bottom:23px; 
+}
+.zuopin-xia-xiao .zuopin-xia-you-zhong-xiao{
+	width: 100%;
+	height:360px;
+	background: pink;
+	margin-bottom:23px; 
+}
+.zuopin-xia-xiao .zuopin-xia-you-xia-xiao{
+	width: 100%;
+	height: 360px;
+	background: pink;
+	background: url('../img/zuopinxiao3.jpg') center center no-repeat;
+	background-size: cover; 
+}
+
+
+
+
+
+
+
+
+
+
+
