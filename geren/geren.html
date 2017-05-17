@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="js/jquery.fullPage.css">
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/echarts.common.min.js"></script>
     <script>
         $(function(){
             $('#dowebok').fullpage({
                 /*'navigation': true,*/
 //                loopBottom: true,
                 continuousVertical:true,
-                fixedElements:".next",
-                menu:"#menu",
+                fixedElements:".next,header",
                 navigation:"true",
                 navigationTooltips:["Home","About","Portfolio","Experience","Contact"],
-                anchors: ['page1', 'page2', 'page3', 'page4','page5'],
+                anchors:['page1', 'page2', 'page3', 'page4','page5'],
+                menu:"#menu",
                 afterLoad:function(an,index){
                     if(index==1){
                          $(".banner-tu .p1").animate({top:340},1000);
@@ -52,7 +53,7 @@
 
             setInterval(function(){
                 $.fn.fullpage.moveSlideRight();
-            }, 3000);
+            }, 4500);
             $(".next").click(function(){
                 if($(this).hasClass("active")){
                     $.fn.fullpage.moveTo(1);
@@ -63,6 +64,79 @@
             $(".banner-tu .p1").animate({top:340},1200);
             $(".banner-tu .p2").animate({right:80},1200);
             $(".banner-tu .p3").animate({bottom:130},1200);
+
+            var box=document.querySelector(".boxs");
+            var my=echarts.init(box);
+            var option = {
+                title: {
+                    text: '专业技能指数',
+                    left: 'center',
+                    textStyle: {
+                        color: '#000'
+                    }
+                },
+
+                tooltip : {
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b} : {c} ({d}%)"
+                },
+
+                visualMap: {
+                    show: false,
+                    min: 80,
+                    max: 600,
+                    inRange: {
+                        colorLightness: [0, 1]
+                    }
+                },
+                series : [
+                    {
+                        name:'统计',
+                        type:'pie',
+                        radius : '55%',
+                        center: ['50%', '50%'],
+                        data:[
+                            {value:335, name:'Php'},
+                            {value:310, name:'Html5'},
+                            {value:274, name:'PhotoShop'},
+                            {value:235, name:'WordPress'},
+                            {value:400, name:'Jquery'}
+                        ].sort(function (a, b) { return a.value - b.value; }),
+                        roseType: 'radius',
+                        label: {
+                            normal: {
+                                textStyle: {
+                                    color: 'rgba(255, 255, 255,1)'
+                                }
+                            }
+                        },
+                        labelLine: {
+                            normal: {
+                                lineStyle: {
+                                    color: 'rgba(255, 255, 255, 0.3)'
+                                },
+                                smooth: 0.2,
+                                length: 10,
+                                length2: 20
+                            }
+                        },
+                        itemStyle: {
+                            normal: {
+                                color: '#c23531',
+                                shadowBlur: 200,
+                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            }
+                        },
+
+                        animationType: 'scale',
+                        animationEasing: 'elasticOut',
+                        animationDelay: function (idx) {
+                            return Math.random() * 200;
+                        }
+                    }
+                ]
+            };
+            my.setOption(option);
         });
     </script>
 </head>
@@ -80,13 +154,13 @@
 
                             <span>MY PROSILE</span>
                             <div>
-                                <ul >
-                                    <li>Home</li>
-                                    <li>About</li>
-                                    <li>Experience</li>
-                                    <li>Portfolio</li>
-                                    <li>Gallery</li>
-                                    <li>Contact</li>
+                                <ul id="menu">
+                                    <li data-menuanchor="page1" class="active"><a href="#page1">Home</a></li>
+                                    <li data-menuanchor="page2"><a href="#page2">About</a></li>
+                                    <li data-menuanchor="page3"><a href="#page3">Experience</a></li>
+                                    <li data-menuanchor="page4"><a href="#page4">Portfolio</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li data-menuanchor="page5"><a href="#page5">Contact</a></li>
                                 </ul>
                             </div>
 
@@ -152,7 +226,7 @@
                         <span>本人性格内外结合,适应能力强，为人诚实，有良好的人际交往能力，具备相关的专业知识和认真。细心、耐心的工作态度及良好的职业道德修养。相信团体精神的我对工作认真负责，总希望能把事情做得更好! 性格开朗，对文字语言和数字敏感，对生活充满希望，对工作充满热情! 能在短期间内适应新环境，有强烈的品质意识;对工作认真负责，上进心强! 懂电脑基本操作，熟练小键盘操作!</span>
                     </div>
                     <div class="about-xia-right-box-xia">
-                        <table border="0px" cellspacing="0px" cellpadding="20px">
+                       <!-- <table border="0px" cellspacing="0px" cellpadding="20px">
                             <tr>
                                 <td>Jquery</td>
                                 <td class="jindu">
@@ -189,7 +263,8 @@
                                 </td>
                                 <td class="baifenbi">96%</td>
                             </tr>
-                        </table>
+                        </table>-->
+                        <div class="boxs"></div>
                     </div>
                 </div>
             </div>
@@ -207,21 +282,103 @@
         <div class="zuopin-xia">
             <div class="zuopin-xia-zuo slide">
                 <div class="zuopin-xia-zuo-shang">
-                    <!-- <img src="img/闪屏.jpg" alt=""> -->
-                    <div class="zhezhao"></div>
+                    <div class="tu1 tu2">
+                        <img src="img/pg3.JPEG" alt="">
+                        <div class="bottom">
+                            <span class="wenzi1">关注人数6666人</span>
+                            <span class="wenzi2">点击查看</span>
+                        </div>
+                    </div>
+                    <div class="tu2">
+                        <img src="img/t3.jpg" alt="">
+                        <div class="bottom">
+                            <span class="wenzi1">关注人数6666人</span>
+                            <span class="wenzi2">点击查看</span>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="zuopin-xia-zuo-zhong">
-                    <!-- <img src="img/麦克风.jpg" alt=""style="height:330px; width: 360px;"> -->
+                    <div class="tu1 tu2">
+                        <img src="img/f2.jpg" alt="">
+                        <div class="bottom">
+                            <span class="wenzi1">关注人数6666人</span>
+                            <span class="wenzi2">点击查看</span>
+                        </div>
+                    </div>
+                    <div class="tu2">
+                        <img src="img/jd1.jpg" alt="">
+                        <div class="bottom">
+                            <span class="wenzi1">关注人数6666人</span>
+                            <span class="wenzi2">点击查看</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="zuopin-xia-zuo-xia"></div>
+                <div class="zuopin-xia-zuo-xia">
+                    <div class="tu1 tu2">
+                        <img src="img/yd3.gif" alt="">
+                        <div class="bottom">
+                            <span class="wenzi1">关注人数6666人</span>
+                            <span class="wenzi2">点击查看</span>
+                        </div>
+                    </div>
+                    <div class="tu2">
+                        <img src="img/xm2.jpg" alt="">
+                        <div class="bottom">
+                            <span class="wenzi1">关注人数6666人</span>
+                            <span class="wenzi2">点击查看</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="zuopin-xia-zhong slide">
                 <div class="zuopin-xia-zhong-shang">
-
+                    <div class="tu1 tu2">
+                        <img src="img/sf2.jpg" alt="">
+                        <div class="bottom">
+                            <span class="wenzi1">关注人数6666人</span>
+                            <span class="wenzi2">点击查看</span>
+                        </div>
+                    </div>
+                    <div class="tu2">
+                        <img src="img/sl3.jpg" alt="">
+                        <div class="bottom">
+                            <span class="wenzi1">关注人数6666人</span>
+                            <span class="wenzi2">点击查看</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="zuopin-xia-zhong-zhong"></div>
-                <div class="zuopin-xia-zhong-xia"></div>
+                <div class="zuopin-xia-zhong-zhong">
+                    <div class="tu1 tu2">
+                        <img src="img/td1.jpg" alt="">
+                        <div class="bottom">
+                            <span class="wenzi1">关注人数6666人</span>
+                            <span class="wenzi2">点击查看</span>
+                        </div>
+                    </div>
+                    <div class="tu2">
+                        <img src="img/dz1.jpg" alt="">
+                        <div class="bottom">
+                            <span class="wenzi1">关注人数6666人</span>
+                            <span class="wenzi2">点击查看</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="zuopin-xia-zhong-xia">
+                    <div class="tu1 tu2">
+                        <img src="img/han1.jpg" alt="">
+                        <div class="bottom">
+                            <span class="wenzi1">关注人数6666人</span>
+                            <span class="wenzi2">点击查看</span>
+                        </div>
+                    </div>
+                    <div class="tu2">
+                        <img src="img/td1.png" alt="">
+                        <div class="bottom">
+                            <span class="wenzi1">关注人数6666人</span>
+                            <span class="wenzi2">点击查看</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="zuopin-xia-you slide">
                 <div class="zuopin-xia-you-shang">
@@ -315,13 +472,14 @@
             </div>
             <div class="lianxi-botttom-right">
                 <div class="lianxi-botttom-right-shang">
-                    <span><!-- <input type="text" style="width: 100%; height: 100%;"placeholder="Your Name*"> --></span>
+                    <input type="text" placeholder="Your Name:">
                 </div>
                 <div class="lianxi-botttom-right-zhong">
-                    <span>Your Email*</span>
+                    <input type="text" placeholder="Your Email:">
                 </div>
                 <div class="lianxi-botttom-right-xia">
-                    <span>Your Massage*</span>
+                    <input type="text" placeholder="Your Massage:">
+                    <input type="text" >
                     <div class="lianxi-botttom-right-xia-feiji"></div>
                 </div>
             </div>
